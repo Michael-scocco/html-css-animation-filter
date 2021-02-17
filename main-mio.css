@@ -1,8 +1,55 @@
 div.ex-1-square{
-    transition: background 0.7s ease-in-out 0.7s;
+    transition: background 3s linear ;
 }
 
 div.ex-1-square:hover{
     background-color: red;
 }
 /* __________________________ */
+
+div.ex-2-square{
+    transition: width 2s ease-in-out;
+}
+div.ex-2-square:active{
+    width: 100%;
+}
+/* ________________________________ */
+
+div.ex-3-square{
+    transition: border-radius 0.5s ease-in-out;
+}
+div.ex-3-square:hover{
+    border-radius: 50%;
+}
+/* _______________________________ */
+
+div.ex-4-square{
+    transition: background 1s linear ;
+}
+div.ex-4-square:hover{
+    background-color: #f5f3f3;
+}
+/* _________________________________ */
+
+div.ex-5-square{
+    transition: transform 1s ease-in-out;
+}
+div.ex-5-square:hover{
+    transform: scale(2);    /*1 uguale al 100%, 2 il doppio */
+}
+div.ex-5-square:active{
+    transform: scale(0.50);
+}
+/* _____________________________________ */
+
+img.ex-6-img{
+    transition: filter ease;
+}
+img.ex-6-img:hover{
+    filter:grayscale(100%);
+}
+/* ______________________________________ */
+
+img.ex-7-img{
+    transition: all ease-in
+}
