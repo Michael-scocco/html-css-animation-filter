@@ -75,3 +75,40 @@ img.ex-9-img:hover{
     filter: grayscale(.6) sepia(.5);
 }
 /* ________________________________ */
+
+i.ex-10-icon{
+    animation-name: infinity;
+    animation-duration: 1s; /*quanto tempo ci mette a fare un giro*/
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes infinity {
+    0%{transform: rotate(-360deg);}
+}
+/* ________________________ */
+
+i.ex-11-icon:hover{
+    animation-name: incomplete;
+    animation-duration: 3s; /*quanto tempo ci mette a fare un giro*/
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes incomplete {
+    0%{transform: rotate(0deg);}
+    90%{transform: rotate(280deg);}
+}
+
+
+
+div.ex-12-button:hover .ex-12-top-white{
+    animation-name: left;
+    animation-duration: 1s; /*quanto tempo ci mette a fare un giro*/
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes left {
+    0%{left: 10%;}
+    50%{left: 100%;}
+    100%{left:10%;}
+}
