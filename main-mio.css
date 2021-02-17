@@ -51,5 +51,27 @@ img.ex-6-img:hover{
 /* ______________________________________ */
 
 img.ex-7-img{
-    transition: all ease-in
+    transition: filter 2s ease-in;
 }
+img.ex-7-img:hover{
+    filter:sepia(0.5);
+}
+/* ____________________________________ */
+img.ex-8-img{
+    transition: all 1s linear 1s;
+}
+img.ex-8-img:hover{
+    filter: grayscale(.6) sepia(.5);
+    border-radius: 20px;
+}
+/* _______________________________ */
+
+img.ex-9-img{
+    transition: all 1s ease-in-out;
+}
+img.ex-9-img:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+    filter: grayscale(.6) sepia(.5);
+}
+/* ________________________________ */
