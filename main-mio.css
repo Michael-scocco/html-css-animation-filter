@@ -99,9 +99,9 @@ i.ex-11-icon:hover{
     90%{transform: rotate(280deg);}
 }
 
+/* ____________________________ */
 
-
-div.ex-12-button:hover .ex-12-top-white{
+.ex-12-button:hover .ex-12-top-white{
     animation-name: left;
     animation-duration: 1s; /*quanto tempo ci mette a fare un giro*/
     animation-iteration-count: 1;
@@ -109,6 +109,35 @@ div.ex-12-button:hover .ex-12-top-white{
 }
 @keyframes left {
     0%{left: 10%;}
-    50%{left: 100%;}
+    50%{left: calc(100% - 60px);}
+    100%{left:10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: right;
+    animation-duration: 1s; /*quanto tempo ci mette a fare un giro*/
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes right {
+    0%{right: 20%;}
+    50%{right: calc(100% - 60px);}
+    100%{right: 20%;}
+}
+
+/* _________________________________ */
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: left-complete;
+    animation-duration: 6s; /*quanto tempo ci mette a fare un giro*/
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+}
+
+@keyframes left-complete {
+    0%{left: 10%;}
+    25%{left: calc(100% - 60px);}
+    50%{top: 0; bottom:calc(100% - 60px);}
+    75%{bottom:calc(100% - 60px); right: calc(100% - 60px);}
     100%{left:10%;}
 }
